@@ -1,20 +1,17 @@
-import React from "react";
-import Weather from "./Weather";
- 
-import './App.css';
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
+import WeatherSearch from "./WeatherSearch";
 
-function App() {
-  return (
+import "./App.css";
+
+const rootElement = document.getElementById("root");
+const root = createRoot(rootElement);
+
+root.render(
+  <StrictMode>
     <div className="App">
-      <header className="App-header">
-       
-        <h1>
-          Love Elshaddai</h1>
-          <Weather city="Lagos"/>  
-        
-      </header>
+      <h1>Weather App</h1>
+      <WeatherSearch />
     </div>
-  );
-}
-
-export default App;
+  </StrictMode>
+);
