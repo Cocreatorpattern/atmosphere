@@ -13,7 +13,7 @@ export default function WeatherSearch() {
       wind: response.data.wind.speed,
       humidity: response.data.main.humidity,
       icon: `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
-      description: response.data.weather[0].description
+      description: response.data.weather[0].description,
     });
   }
 
@@ -54,3 +54,15 @@ export default function WeatherSearch() {
     return form;
   }
 }
+<footer>
+  <a
+    href="https://github.com/Cocreatorpattern/atmosphere"
+    target="_blank"
+    rel="noreferrer"
+  >
+    {" "}
+    open-source{""}
+  </a>
+  {""}
+  by Nneka Umerah
+</footer>;
